@@ -3,7 +3,7 @@
 //Syntax: id=String
 
 //if false, list file, if true do not list file in selection menu
-ignore=false
+ignore=true
 
 //Name to display in language dropdown menu
 displayName=German (Incomplete)
@@ -19,7 +19,7 @@ main.buttonFuelSimulation=Treibstoffsimulation
 main.buttonTimeSimulation=Zeitsimulation
 main.buttonHeatupOnly=Nur Aufwärmzeit
 
-footer.description=Dieser Rechner wird die sagen, wie viel Treibstoff einer bestimmten Sorte nötig ist, um einen kalten Dampfkessel auf die Maximaltemperatur aufzuheizen (Nur Aufwärmzeit), dir sagen, wie lange er mit einer bestimmten Menge Treibstoff laufen wird (Treibstoffsimulation) oder schließlich sagen, wie viel Treibstoff nötig ist, um den Dampfkessel eine bestimmte Zeit laufen zu lassen (Zeitsimulation).
+footer.description=Dieser Rechner wird dir sagen, wie viel Treibstoff einer bestimmten Sorte nötig ist, um einen kalten Dampfkessel auf die Maximaltemperatur aufzuheizen (Nur Aufwärmzeit), dir sagen, wie lange er mit einer bestimmten Menge Treibstoff laufen wird (Treibstoffsimulation) oder schließlich sagen, wie viel Treibstoff nötig ist, um den Dampfkessel eine bestimmte Zeit laufen zu lassen (Zeitsimulation).
 footer.noteworthy=Ein paar nennenswerte Dinge:
 footer.credits=Dieser Rechner wurde von $Forecaster geschrieben, für die Minecraft-Modifikation $Railcraft von $CovertJaguar, basierend auf von dem Autor bereitgestellten Formeln.
 //$Forecaster: Forecaster
@@ -34,71 +34,68 @@ footer.tag=Dies ist ein Produkt von Forecaster! (Außer es explodiert, dann hatt
 
 //errors
 //$ tags here are numbers only
-error.generic=Error $error: This isn't supposed to happen here! Please contact the Admin as soon as possible!
-error.numTanks=numTanks is not numeric.
-error.numTanksSmall=numTanks is too small.
-error.numTanksValue=numTanks value is greater than 500.
-error.heatLevelNum=Heat level is not numeric.
-error.heatLevelLow=Heat level too low. Needs to be at least 20. I fixed it for you. Just re-simulate.
-error.heatLevelHigh=Heat level is too high.
-error.noFuel=No fuel recieved! Simulation cannot run without fuel.
-error.fuelHigh=Fuel amount is too high.
-error.outdatedURL=Outdated url formatting.
-error.daysNum=Days is not numeric.
-error.hoursNum=Hours is not numeric.
-error.minNum=Minutes is not numeric.
-error.daysHigh=Days is too high.
-error.hoursHigh=Hours is too high.
-error.minHigh=Minutes is too high.
-error.noTime=No time given, simulation cannot run.
+error.generic=Error $error: Die hätte hier nicht passieren sollen! Bitte kontaktiere den Admin so schnell wie möglich!
+error.numTanks=numTanks ist nicht numerisch.
+error.numTanksSmall=numTanks ist zu klein.
+error.numTanksValue=numTanks-Wert ist größer als 500.
+error.heatLevelNum=Hitzelevel ist nicht numerisch.
+error.heatLevelLow=Hitzelevel zu niedrig. Muss mindestens 20 sein. Ich habe das für dich behoben. re-simuliere einfach.
+error.heatLevelHigh=Hitzelevel ist zu hoch.
+error.noFuel=Kein Treibstoff empfangen! Simulation kann nicht ohne Treibstoff ablaufen.
+error.fuelHigh=Treibstoffmenge ist zu hoch.
+error.outdatedURL=Veraltete URL-Formatierung.
+error.daysNum=Tage ist nicht numerisch.
+error.hoursNum=Stunden ist nicht numerisch.
+error.minNum=Minuten ist nicht numerisch.
+error.noTime=Keine Zeit gegeben, Simulation kann nicht ablaufen.
 
 //shared
-common.filterAll=Show All
-common.filterSolid=Solid only
-common.filterFluid=Fluids only
-common.filterButton=Filter Fuel List
-common.fuel=Fuel
-common.fuelDesc=(State) Name (Stack size)(Heat Value)
-common.lp=Low Pressure (Max Heat: 500)
-common.hp=High Pressure (Max Heat: 1000)
-common.boiler=Boiler Type
-common.numTanks=Number of Tanks (Size)
-common.numTanksDesc=Going for more than you need wasted fuel.
-common.barrel=Factorization barrel style item count
-common.barrelDesc=If off displays absolute item count.
-common.heatLevel=Starting Heat Level
-common.heatLevelDesc=Setting this to max (500 or 1000) skips the heatup in any mode.
-common.heatingProcess=Show Heating Process
-common.heatingProcessDesc=Warning! May make the page take longer to render!
-common.energy=Energy Production Report
-common.energyDesc=Displays production in selected units. Unavailable in heatup mode.
-common.average=Round Energy Average
-common.averageDesc=Select if you want energy average rounded to two decimals.
+common.filterAll=Zeige alles
+common.filterSolid=Nur Feststoff
+common.filterFluid=Nur Flüssigkeit
+common.filterButton=Treibstoffliste filtern
+common.fuel=Treibstoff
+common.fuelDesc=(Zustand) Name (Max Stapelgröße)(Heizwert)
+common.lp=Niederdruck (Max-Hitze: 500)
+common.hp=Hochdruck (Max-Hitze: 1000)
+common.boiler=Dampfkesseltyp
+common.numTanks=Zahl der Tanks (Größe)
+common.numTanksDesc=Wenn du auf mehr aus bist als du brauchst, verschwendest du Treibstoff.
+common.barrel=Item-Zählung nach Factorization-Fass-Stil
+common.barrelDesc=Wenn Aus, wird absolute Itemzahl gezeigt.
+common.heatLevel=Start-Hitzelevel
+common.heatLevelDesc=Das auf Max zu setzen (500 oder 1000), überspringt den Heizprozess, egal, in welchem Modus.
+common.heatingProcess=Zeige Heizprozess
+common.heatingProcessDesc=Warnung! Könnte dazu führen, dass die Seite länger rendern muss!
+common.energy=Energieproduktionsreport
+common.energyDesc=Zeigt die Produktion in ausgewählten Einheiten an. Nicht verfügbar im Aufheiz-Modus.
+common.average=Runde Energiedurchschnitt
+common.averageDesc=Wähle das aus, wenn du möchtest, dass der Energiedurchschnitt auf zwei Dezimalstellen gerundet wird.
 
 common.tick=Tick:
-common.fuel=Fuel:
-common.heat=Heat:
-common.steam=Steam:
-common.item=item
-common.items=items
-common.bucket=bucket
-common.buckets=buckets
-common.submit=Submit
+common.fuel=Treibstoff:
+common.heat=Hitze:
+common.steam=Dampf:
+common.item=Item
+common.items=Items
+common.bucket=Bucket
+common.buckets=Buckets
+common.submit=Bestätigen
 
-submit.simulate=Simulate
-submit.resimulate=Re-Simulate
+submit.simulate=Simulieren
+submit.resimulate=Re-Simulieren
 
 //fuel options
-fuel.options.description=Fuel Simulation Mode lets you input a specific amount of fuel and see how long the boiler will run. In this mode each phase can be disabled by unticking the respective checkbox. Fuel is input in either of the two boxes. The first represents stacks, and the second single items. Both accept decimals, so you can for example enter 0.5 in the first box to get half a stack (32) of your selected fuel, or enter 0.5 in the second box to run on half an item.
-fuel.options.title=Fuel Simulation Mode
-fuel.options.heatup=Heatup Phase
-fuel.options.run=Run Phase
-fuel.options.cooldown=Cooldown Phase
-fuel.options.amount=Fuel Amount
-fuel.options.amountDesc=(S)Items or (L)Buckets, not mB
+fuel.options.description=Treibstoffsimulationsmodus lässt dich eine bestimmte Treibstoffmenge eintragen und sehen, wie lange der Dampfkessel damit läuft. In diesem Modus kann jede Phase deaktiviert werden, indem die jeweilige Checkbox deaktiviert wird. Treibstoff wird in eine der zwei Boxen eingetragen. Die erste repräsentiert Stapel und die zweite einzelne Items. Beide akzeptieren Dezimalzahlen, also kannst du zum Beispiel 0.5 in die erste Box eintragen, um 32 Items deines ausgewählten Treibstoffes zu entsprechen, oder 0.5 in die zweite Box eintragen, um ein halbes Item zu verwenden.
+fuel.options.title=Treibstoffsimulationsmodus
+fuel.options.heatup=Aufheizphase
+fuel.options.run=Arbeitsphase
+fuel.options.cooldown=Abkühlphase
+fuel.options.amount=Treibstoffmenge
+fuel.options.amountDesc=(S)Items oder (L)Buckets, nicht mB
 
 //fuel results
-fuel.results.title=Results from <o>Fuel Simulation Mode:</o>
+fuel.results.title=Results vom <o>Treibstoffsimulationsmodus:</o>
 
 //heatup failed to complete
 //$ tags here are numbers only
@@ -217,10 +214,13 @@ panels.comment.view=Zeige Kommentare
 //comment menu panel
 panels.commentmenu.toggle=Kommentar-Menüfeld schalten
 panels.commentmenu.back=Zurück zum Rechner
-panels.commentmenu.show=Zeige versteckte Kommentare
-panels.commentmenu.hide=Blende versteckte Kommentare wieder aus
-panels.commentmenu.replies=Antworten ausblenden
 panels.commentmenu.refresh=Neu laden
+
+//comment settings panel
+panels.commentsettings.toggle=Kommentareinstellungs-Panel ein-/ausblenden
+panels.commentsettings.showReplies=Zeige Antworten
+panels.commentsettings.showHidden=Zeige versteckte Kommentare
+panels.commentsettings.apply=Änderungen anwenden
 
 //comments
 //$ tags here are numbers only
@@ -237,8 +237,9 @@ comments.main.bug2=Wenn du das Kommentar-Feld nutzt, wird die URL der aktuellen 
 comments.main.replyto=Antwort an
 comments.main.sorry=Sorry, keine Kommentare gefunden.
 comments.main.submitted=Gesendet am
+//"Submitted on 2013-10-27, 04:10 AM"
 comments.main.hidden=VERSTECKT! Grund:
-comments.main.id=This ID was generated from the ip the comment was submitted from. Click to show comments with this ID.
+comments.main.id=Diese ID wurde von der IP generiert, von der der Kommentar abgeschickt wurde . Klicke, um Kommentare mit dieser ID zu zeigen.
 comments.main.reply=Antworten
 
 comments.error.write=Bitte schreibe etwas in das Textfeld.

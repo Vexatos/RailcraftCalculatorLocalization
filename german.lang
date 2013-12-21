@@ -71,6 +71,10 @@ common.energy=Energieproduktionsreport
 common.energyDesc=Zeigt die Produktion in ausgewählten Einheiten an. Nicht verfügbar im Aufheiz-Modus.
 common.average=Runde Energiedurchschnitt
 common.averageDesc=Wähle das aus, wenn du möchtest, dass der Energiedurchschnitt auf zwei Dezimalstellen gerundet wird.
+common.custom=Spezieller Treibstoffwert
+common.customDesc=Erlaubt es, einen spezifischen Treibstoffwert zu verwenden. Überschreibt ausgewählte Treibstoffart im Treibstoffmenü.
+common.fuelPerSteamMultiplier=Treibstoff-pro-Dampf-Multiplikator
+common.fuelPerSteamMultiplierDesc=Dies ist eine Railcraft-Config-Option.
 
 common.tick=Tick:
 common.fuel=Treibstoff:
@@ -95,7 +99,7 @@ fuel.options.amount=Treibstoffmenge
 fuel.options.amountDesc=(S)Items oder (L)Buckets, nicht mB
 
 //fuel results
-fuel.results.title=Results vom <o>Treibstoffsimulationsmodus:</o>
+fuel.results.title=Ergebnisse vom <o>Treibstoffsimulationsmodus:</o>
 
 //heatup failed to complete
 //$ tags here are numbers only
@@ -158,8 +162,7 @@ heatup.options.roundDesc=When ticked fuel usage/h will be rounded up to the near
 //$ tags here are numbers only
 heatup.results.title=Results from <o>Heatup Only Mode:</o>
 heatup.results.heatuptook=Heatup took $str_time.
-heatup.results.itemsused=$str_itemsused fuel items were used.
-heatup.results.bucketsused=$str_bucketsused buckets of fuel were used.
+heatup.results.totalitems=Used a total of $str_items items/buckets.
 heatup.results.fuelperhour=Fuel/h after heating up:
 heatup.results.fuelperhourdesc=This is the amount of fuel you must provide to keep the boiler from loosing heat.
 
